@@ -27,3 +27,12 @@ input {
 .createPatientForm {
   margin-top: 5vh;
 }
+
+#form-container-div {
+  background: #eeeeee;
+  padding: 1rem;
+  border-radius: 20px;
+}
+h3 {
+  font-size: 2rem;
+}

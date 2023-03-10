@@ -27,11 +27,14 @@ const PatientProfile = () => {
     patients && patients.filter((patient) => patient._id === id)[0];
 
   return (
-    <div className="patient-profile">
-      {patient ? <PatientDetails patient={patient} /> : <div>Loading...</div>}
-      <Link to={'edit'}>
-        <button>Edit</button>
-      </Link>
+    <div className="container">
+      <div className="patient-profile mt-5 p">
+        {patient ? (
+          <PatientDetails edit={true} patient={patient} />
+        ) : (
+          <div>Loading...</div>
+        )}
+      </div>
     </div>
   );
 };

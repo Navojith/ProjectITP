@@ -24,10 +24,14 @@ const PatientList = () => {
 
   return (
     <div className="patientList">
-      <div className="patients">
+      <div className="patients m-5">
         {patients ? (
           patients.map((patient) => (
-            <Link key={patient._id} to={`../patient-profile/${patient._id}`}>
+            <Link
+              style={{ color: 'black', textDecoration: 'none' }}
+              key={patient._id}
+              to={`../patient-profile/${patient._id}`}
+            >
               <PatientDetails key={patient._id} patient={patient} />
             </Link>
           ))

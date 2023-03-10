@@ -5,10 +5,18 @@ import PatientList from './pages/PatientList';
 import PatientProfile from './pages/PatientProfile';
 import EditPatientForm from './components/PatientComponents/EditPatientForm';
 import CreatePatientForm from './components/PatientComponents/CreatePatientForm';
+import HeaderComponent from './components/HeaderComponent/HeaderComponent';
 
+// assets
+import mediLineLogo from './assets/common/mediLineLogo.webp';
 function App() {
   return (
     <div className="App">
+      <HeaderComponent
+        profileImgSrc={''}
+        logoImgSrc={mediLineLogo}
+        username={''}
+      />
       <BrowserRouter>
         <div className="pages">
           <Routes>
